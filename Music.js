@@ -105,5 +105,6 @@ document.addEventListener('keydown', (e) => {
             backwardbtn.click();
             }
             
-        });
+    }); 
+    
             
