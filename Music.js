@@ -1,4 +1,20 @@
 let progress=document.getElementById("progress");
+
+progress.addEventListener('input', function() {
+    music.play();
+    music.currentTime = progress.value;
+    playbtn.classList.remove("fa-play");
+    playbtn.classList.add("fa-pause");
+    });
+    
+    progress.addEventListener('touchmove', function() {
+    music.play();
+    music.currentTime = progress.value;
+    playbtn.classList.remove("fa-play");
+    playbtn.classList.add("fa-pause");
+    });
+    
+
 let music=document.getElementById("song");
 let playbtn=document.getElementById("play");
 
